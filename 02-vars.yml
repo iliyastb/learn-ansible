@@ -24,3 +24,4 @@
         url: "dev.com"
       ansible.builtin.debug:
         msg: url = {{ url }}
+

@@ -4,3 +4,10 @@
     - name: display text
       ansible.builtin.debug:
         msg: "hello iliyas"
+
+- name: sample play
+  hosts: all
+  tasks:
+    - name: display text
+      ansible.builtin.debug:
+        msg: "hello iliyas"
