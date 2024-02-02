@@ -1,0 +1,18 @@
+- name: rt var
+  hosts: localhost
+  tasks:
+    - name: play 1
+      ansible.builtin.shell: runtime
+      register: show
+
+    - name: play 2
+      ansible.builtin.debug:
+        msg: {{ show }}
+
+    - name: play 3
+      ansible.builtin.set_fact:
+        msg: {{ show.rc }}
+
+    - name: play 4
+      ansible.builtin.debug:
+        msg: {{ rc }}
