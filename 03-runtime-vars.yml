@@ -3,16 +3,16 @@
   tasks:
     - name: play 1
       ansible.builtin.shell: uptime
-      register: show
+      register: var1
 
     - name: play 2
       ansible.builtin.debug:
-        msg: "{{ show }}"
+        msg: "{{ var1 }}"
 
     - name: play 3
       ansible.builtin.set_fact:
-        status: "{{ show.rc }}"
+        var2: "{{ var1.rc }}"
 
     - name: play 4
       ansible.builtin.debug:
-        msg: "{{ status }}"
+        msg: "{{ var2 }}"
