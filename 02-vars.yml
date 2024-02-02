@@ -3,7 +3,7 @@
   vars:
     url: "example.com"
   tasks:
-    - name: play
+    - name: play 1
       ansible.builtin.debug:
         msg: url = {{ url }}
 
@@ -12,6 +12,15 @@
   vars_files:
     - var.yml
   tasks:
-    - name: play 1
+    - name: play 2
+      ansible.builtin.debug:
+        msg: url = {{ url }}
+
+- name: task level vars
+  hosts: localhost
+  tasks:
+    - name: play 3
+      vars:
+        url = "dev.com"
       ansible.builtin.debug:
         msg: url = {{ url }}
