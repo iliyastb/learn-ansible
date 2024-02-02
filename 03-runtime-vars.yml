@@ -2,16 +2,16 @@
   hosts: localhost
   tasks:
     - name: play 1
-      ansible.builtin.shell: runtime
-      register: out
+      ansible.builtin.shell: uptime
+      register: show
 
     - name: play 2
       ansible.builtin.debug:
-        msg: "{{ out }}"
+        msg: "{{ show }}"
 
     - name: play 3
       ansible.builtin.set_fact:
-        status: "{{ out.rc }}"
+        status: "{{ show.rc }}"
 
     - name: play 4
       ansible.builtin.debug:
