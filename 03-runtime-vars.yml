@@ -11,8 +11,8 @@
 
     - name: play 3
       ansible.builtin.set_fact:
-        msg: "{{ show.rc }}"
+        status: "{{ show.rc }}"
 
     - name: play 4
       ansible.builtin.debug:
-        msg: "{{ rc }}"
+        msg: "{{ status }}"
