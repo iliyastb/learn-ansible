@@ -1,6 +1,6 @@
 - name: play
   hosts: localhost
   tasks:
-    - name: play
+    - name: hi
       ansible.builtin.debug:
         msg: "hello iliyas"
