@@ -3,15 +3,15 @@
   tasks:
     - name: play 1
       ansible.builtin.shell: runtime
-      register: show
+      register: out
 
     - name: play 2
       ansible.builtin.debug:
-        msg: "{{ show }}"
+        msg: "{{ out }}"
 
     - name: play 3
       ansible.builtin.set_fact:
-        status: "{{ show.rc }}"
+        status: "{{ out.rc }}"
 
     - name: play 4
       ansible.builtin.debug:
