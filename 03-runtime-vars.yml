@@ -7,12 +7,12 @@
 
     - name: play 2
       ansible.builtin.debug:
-        msg: {{ show }}
+        msg: "{{ show }}"
 
     - name: play 3
       ansible.builtin.set_fact:
-        msg: {{ show.rc }}
+        msg: "{{ show.rc }}"
 
     - name: play 4
       ansible.builtin.debug:
-        msg: {{ rc }}
+        msg: "{{ rc }}"
