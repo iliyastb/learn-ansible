@@ -31,3 +31,10 @@
     - name: play 4
       ansible.builtin.debug:
         msg: url = {{ url }}
+
+- name: vars from cli
+  hosts: localhost
+  tasks:
+    - name: play 5
+      ansible.builtin.debug:
+        msg: url = {{ urll }}
