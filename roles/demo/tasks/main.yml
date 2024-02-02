@@ -1,6 +1,3 @@
-- name: demo
-  hosts: localhost
-  tasks:
-    - name: play 1
-      ansible.builtin.debug:
-        msg: "{{ url }}"
+- name: role
+  ansible.builtin.debug:
+    msg: "{{ url }}"
