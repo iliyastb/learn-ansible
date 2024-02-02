@@ -16,7 +16,7 @@
       ansible.builtin.debug:
         msg: url = {{ url }}
 
-- name: task level vars
+- name: vars from tasks
   hosts: localhost
   tasks:
     - name: play 3
@@ -25,3 +25,9 @@
       ansible.builtin.debug:
         msg: url = {{ url }}
 
+- name: vars from inventory
+  hosts: all
+  tasks:
+    - name: play 4
+      ansible.builtin.debug:
+        msg: url = {{ url }}
