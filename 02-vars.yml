@@ -21,7 +21,7 @@
   tasks:
     - name: play 3
       vars:
-        url: "dev.com"
+        url: "example.tasks.com"
       ansible.builtin.debug:
         msg: url = {{ url }}
 
