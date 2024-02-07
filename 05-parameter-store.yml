@@ -1,7 +1,14 @@
-- name: create parameter
+#- name: create parameter
+#  hosts: localhost
+#  tasks:
+#    - name: lookup
+#    - ansible.builtin.debug:
+#        msg: "hi"
+#        #msg: {{ lookup('amazon.aws.aws_test', 'test') }}
+
+- name: sample play
   hosts: localhost
   tasks:
-    - name: lookup
-    - ansible.builtin.debug:
-        msg: "hi"
-        #msg: {{ lookup('amazon.aws.aws_test', 'test') }}
+    - name: display text
+      ansible.builtin.debug:
+        msg: "hello iliyas"
