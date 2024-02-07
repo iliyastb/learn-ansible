@@ -1,5 +1,4 @@
 - name: p store
   hosts: localhost
   tasks:
-    - debug:
-        msg: "{{ lookup('amazon.aws.aws_ssm', 'test') }}"
+    - debug: msg="{{ lookup('amazon.aws.aws_ssm', 'test') }}"
