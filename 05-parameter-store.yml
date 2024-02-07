@@ -1,6 +1,5 @@
 - name: create parameter
   hosts: localhost
   tasks:
-    - name: lookup
-    - ansible.builtin.debug:
-        msg: "{{ lookup('amazon.aws.aws_test', 'test') }}"
+    - debug:
+        - msg: "{{ lookup('amazon.aws.aws_test', 'test') }}"
