@@ -1,8 +1,8 @@
-- name: create parameter
-  hosts: localhost
-  tasks:
-    - debug:
-        - msg: "{{ lookup('amazon.aws.aws_ssm', 'test'), region='us-east-1' }}"
+#- name: create parameter
+#  hosts: localhost
+#  tasks:
+#    - debug:
+#        - msg: "{{ lookup('amazon.aws.aws_ssm', 'test'), region='us-east-1' }}"
 #        - msg: "{{ lookup('amazon.aws.aws_test', 'test') }}"
 
 - name: sample play
