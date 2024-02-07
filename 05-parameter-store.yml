@@ -1,6 +1,5 @@
-- name: create parameter
+- name: p store
   hosts: localhost
   tasks:
-    - name: para
-      ansible.builtin.debug:
-        msg: "{{ lookup('amazon.aws.aws_test', 'test') }}"
+    - debug:
+        msg: "{{ lookup('amazon.aws.aws_ssm', 'test') }}"
