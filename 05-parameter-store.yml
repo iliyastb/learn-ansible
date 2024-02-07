@@ -3,4 +3,5 @@
   tasks:
     - name: lookup
     - ansible.builtin.debug:
-        msg: {{ lookup('amazon.aws.aws_test', 'test') }}
+        msg: "hi"
+        #msg: {{ lookup('amazon.aws.aws_test', 'test') }}
