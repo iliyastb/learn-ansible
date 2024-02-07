@@ -5,7 +5,7 @@
         - msg: "{{ lookup('amazon.aws.aws_ssm', 'test'), region='us-east-1' }}"
 #        - msg: "{{ lookup('amazon.aws.aws_test', 'test') }}"
 
-  name: sample play
+- name: sample play
   hosts: localhost
   tasks:
     - name: display text
