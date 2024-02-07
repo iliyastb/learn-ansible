@@ -1,0 +1,5 @@
+- name: create parameter
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: {{ lookup('amazon.aws.aws_test', 'test') }}
