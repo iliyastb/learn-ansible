@@ -1,4 +1,4 @@
 url: "example.file.com"
 
-component: frontend
-env: dev
+component: "frontend"
+env: "dev"

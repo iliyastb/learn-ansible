@@ -1,5 +1,8 @@
 - name: p store
   hosts: localhost
+#  vars:
+#    component: frontend
+#    env: dev
   tasks:
     - debug:
         msg: "{{ lookup('amazon.aws.aws_ssm', '{{env}}.{{component}}.catalogue_url', region='us-east-1') }}"
