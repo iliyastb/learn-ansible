@@ -1,1 +1,4 @@
 url: "demo.role.com"
+
+env: dev
+component: frontend

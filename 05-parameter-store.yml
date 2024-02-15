@@ -6,3 +6,5 @@
   tasks:
     - debug:
         msg: "{{ lookup('amazon.aws.aws_ssm', '{{env}}.{{component}}.catalogue_url', region='us-east-1') }}"
+
+j
