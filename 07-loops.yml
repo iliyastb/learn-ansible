@@ -1,7 +1,7 @@
 - hosts: localhost
   tasks:
     - debug:
-        msg: kaya - {{item}
+        msg: kaya - {{item}}
       loop:
         - banana
         - apply
