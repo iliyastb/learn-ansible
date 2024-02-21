@@ -9,17 +9,7 @@
 - hosts: localhost
   tasks:
     - debug:
-        msg: kaya peru {{item.name}}, {{item.quantity}}
+        msg: kaya peru {{item.name}}, enni unnai {{item.quantity}}
       loop:
         - {name: "apple", quantity: 10}
         - {name: "banana", quantity: 5}
-
-
-#- hosts: localhost
-#  tasks:
-#    - debug:
-#        msg: fruit name - {{ item.name }}, {{ item.quantity }}
-#      loop:
-#        - { name: “apple”, quantity: 10 }
-#        - { name: “banana”, quantity: 30 }
-#        - { name: “orange”, quantity: 20 }
