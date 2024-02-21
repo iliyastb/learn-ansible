@@ -1,4 +1,7 @@
 - hosts: localhost
   tasks:
     - debug:
-        msg: "hi"
+        msg: kaya - {{item}}
+        loop:
+          - apple
+          - banana
