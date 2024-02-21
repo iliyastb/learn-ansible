@@ -4,12 +4,12 @@
         msg: kaya peru {{item}}
       loop:
         - banana
-        - apply
+        - apple
 
 - hosts: localhost
   tasks:
     - debug:
-        msg: kaya peru {{item.name}}, enni unnai {{item.quantity}}
+        msg: kaya peru {{item.name}}, {{item.quantity}}
       loop:
         - {name:"apple", quantity:10}
         - {name:"banana", quantity:5}
